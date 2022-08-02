@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- include the jQuery and jQuery UI scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-ui-Slider-Pips/1.11.4/jquery-ui-slider-pips.js"></script>
+    <!-- plus a jQuery UI theme, here I use "flick" -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Modern Finance</title>
+  </head>
+  <body>
+    <!------------------------- top-container -------------------->
+    <div class="container-fluid logo-container">
+      <div class="container top-container">
+        <img class="logo" src="./images/sample-logo.png" alt="Logo" />
+        <span class="top-right">
+          <img class="arabic" src="./images/arabic.png" alt="Arabic" />
+          <span class="top-right-menu">
+            <span class="contact-info"
+              ><i class="fa fa-bold fa-whatsapp"></i> &nbsp;
+              1-866-484-3432</span
+            >
+            <div class="dropdown">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="dropdown"
+              >
+                <i class="fa fa-bars"></i>
+                Menu
+              </button>
+
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">How it works</a>
+                <a class="dropdown-item" href="#">Why Guidance</a>
+                <a class="dropdown-item" href="#">Get Prequalified</a>
+                <a class="dropdown-item" href="#">Find an Account Executive</a>
+                <a class="dropdown-item" href="#">Resources</a>
+              </div>
+            </div>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <!------------------------ banner-container -------------------->
+    <div class="container-fluid p-0 banner-container">
+      <h1>
+        Get pre-qualified online in less than 10 minutes
+        <span><i class="fa fa-angle-right"></i></span>
+      </h1>
+      <img class="img-fluid" src="./images/banner-image.png" alt="banner" />
+    </div>
+
+    <!------------------------ tab-container -------------------->
+    <div class="container tab-container">
+      <div class="flex-row">
+        <div class="col">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home-purchase"
+                >Home Purchase</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#refinance"
+                >Refinance</a
+              >
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="home-purchase" class="container tab-pane active">
+              <br />
+              <div class="row division">
+                <div class="col-md-4">
+                  <h3>Select Home Value</h3>
+                  <!-- <div class="slidecontainer-1">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="0"
+                      class="slider"
+                    />
+                  </div> -->
+                  <div class="slider position-slider-1"></div>
+                </div>
+
+                <div class="col-md-4">
+                  <h3>Enter Down Payment</h3>
+                  <!-- <div class="slidecontainer-1">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="0"
+                      class="slider"
+                    />
+                  </div> -->
+                  <div class="slider position-slider-1"></div>
+                </div>
+
+                <div class="col-md-4">
+                  <h3>Select Payment Term</h3>
+                  <input
+                    type="radio"
+                    id="fixed"
+                    name="payment-type"
+                    value="Fixed"
+                  />
+                    <label for="fixed">Fixed</label>  
+                  <input
+                    type="radio"
+                    id="adjustable"
+                    name="payment-type"
+                    value="Adjustable"
+                  />
+                    <label for="adjustable">Adjustable</label>
+                  <!-- <div class="slidecontainer-2">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="0"
+                      class="slider"
+                    />
+                  </div> -->
+                  <div class="slider position-slider-2"></div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <button class="button">
+                  Compare our Plans <i class="fa fa-chevron-circle-down"></i>
+                </button>
+              </div>
+            </div>
+            <div id="refinance" class="container tab-pane fade">
+              <br />
+              <h5>Refinance</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                doloremque rerum eius voluptatem saepe unde numquam blanditiis
+                eligendi animi? At, molestiae fugit magni hic ab possimus
+                eveniet nam minima, nulla dicta fugiat atque eos molestias. Sed
+                in atque praesentium. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Rerum excepturi labore blanditiis ratione
+                aspernatur laborum quasi provident autem, officiis saepe. Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                doloribus voluptatibus hic quidem in impedit modi unde excepturi
+                earum. Laboriosam praesentium ad illo, et dignissimos in
+                voluptas asperiores voluptate eos? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptas accusantium soluta ipsam,
+                veritatis perferendis cupiditate doloremque neque, dolorum
+                necessitatibus reprehenderit eveniet eaque voluptatibus ipsum
+                incidunt pariatur ut placeat quisquam. Odio!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------ research-container -------------------->
+    <div class="container-fluid research-tool-container">
+      <div class="container research-container">
+        <div class="col py-4 text-center">
+          <h2>Research using our tools</h2>
+        </div>
+
+        <div class="row research-row">
+          <div class="col-md-3 text-center">
+            <i class="fa fa-calculator fa-2x calculator-1"></i>
+            <h3>Affordability Calculator</h3>
+            <p>
+              This is a version of Lorem Ipsumaliquet vel velit auctor aliquet
+            </p>
+            <a href="#">Select</a>&nbsp;<i class="fa fa-caret-right caret"></i>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="fa fa-calculator fa-2x calculator-2"></i>
+            <h3>Rent/Buy Decision Calculator</h3>
+            <p>
+              This is a version of Lorem Ipsumaliquet vel velit auctor aliquet
+            </p>
+            <a href="#">Select</a>&nbsp;<i class="fa fa-caret-right caret"></i>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="fa fa-calculator fa-2x calculator-3"></i>
+            <h3>Refinance Saving Calculator</h3>
+            <p>
+              This is a version of Lorem Ipsumaliquet vel velit auctor aliquet
+            </p>
+            <a href="#">Select</a>&nbsp;<i class="fa fa-caret-right caret"></i>
+          </div>
+          <div class="col-md-3 text-center">
+            <i class="fa fa-bank fa-2x bank"></i>
+            <h3>Our Competitive Rates</h3>
+            <p>
+              This is a version of Lorem Ipsumaliquet vel velit auctor aliquet
+            </p>
+            <a href="#">Compare now</a>&nbsp;<i
+              class="fa fa-caret-right caret"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ residential-container -------------------->
+    <div class="container-fluid mt-5 text-center residential-container">
+      <div class="col py-4 text-center">
+        <h2>Get to know Guidance Residential</h2>
+        <p>
+          This is Photoshop's version of Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Hic quod provident cumque sit eum! Voluptatibus.
+        </p>
+
+        <hr />
+      </div>
+    </div>
+
+    <!------------------------ cards-container -------------------->
+    <div class="container-fluid mt-3 cards-container">
+      <div class="container cards-sub-container">
+        <div class="row mb-5">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/gudinance_image1.png" />
+              <div class="card-body">
+                <h5 class="card-title">Home Purchase and Refinancing needs</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates quia quod nulla
+                </p>
+                <hr />
+                <h6>READ MORE <i class="fa fa-arrow-right"></i></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/gudinance_image2.png" />
+              <div class="card-body">
+                <h5 class="card-title">Home Purchase and Refinancing needs</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates quia quod nulla
+                </p>
+                <hr />
+                <h6>READ MORE <i class="fa fa-arrow-right"></i></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/gudinance_image3.png" />
+              <div class="card-body">
+                <h5 class="card-title">Home Purchase and Refinancing needs</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates quia quod nulla
+                </p>
+                <hr />
+                <h6>READ MORE <i class="fa fa-arrow-right"></i></h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./images/gudinance_image4.png" />
+              <div class="card-body">
+                <h5 class="card-title">Home Purchase and Refinancing needs</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates quia quod nulla
+                </p>
+                <hr />
+                <h6>READ MORE <i class="fa fa-arrow-right"></i></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ provider-container -------------------->
+    <div class="container-fluid px-0 py-2 mt-5 provider-container">
+      <div class="container py-4 text-center">
+        <h2 class="first">Why Guidance Residential is the</h2>
+        <h2>
+          <span style="font-size: 20px" class="special">#1</span> US Islamic
+          Home Financing Provider
+        </h2>
+        <p>
+          This is Photoshop's version of Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Hic quod provident cumque sit eum! Voluptatibus.
+        </p>
+
+        <hr />
+      </div>
+      <div class="container button-container">
+        <button class="button-list" onclick="showContent(1)">
+          <img src="./images/user.png" alt="User" />
+        </button>
+        <button class="button-list" onclick="showContent(2)">
+          <img src="./images/dollar-symbol.png" alt="Dollar" />
+        </button>
+        <button class="button-list" onclick="showContent(3)">
+          <img src="./images/bank.png" alt="Bank" />
+        </button>
+        <button class="button-list" onclick="showContent(4)">
+          <img src="./images/chart.png" alt="Growth Chart" />
+        </button>
+        <button class="button-list" onclick="showContent(5)">
+          <img src="./images/save-money.png" alt="Save Money" />
+        </button>
+      </div>
+      <div id="review1" class="review">
+        <div class="review-content">
+          <p class="description">
+            <span>Independent Sharia board</span>
+            <br />
+            <b>Independent Sharia board</b> comprised of notable scholarly
+            headed by <b>Justice Muhammad Taqi Usmani</b>, Who is also the
+            Chaorman of the Sharia board for the Accounting and Auditing
+            Organization for Islamic Financial Institutions(AAOIFI).
+          </p>
+        </div>
+      </div>
+      <div id="review2" class="review">
+        <div class="review-content">
+          <p class="description">
+            <span>Independent Sharia board</span>
+            <br />
+            <b>Independent Sharia board</b> comprised of notable scholarly
+            headed by <b>Justice Muhammad Taqi Usmani</b>, Who is also the
+            Chaorman of the Sharia board for the Accounting and Auditing
+            Organization for Islamic Financial Institutions(AAOIFI).
+          </p>
+        </div>
+      </div>
+      <div id="review3" class="review">
+        <div class="review-content">
+          <p class="description">
+            <span>Independent Sharia board</span>
+            <br />
+            <b>Independent Sharia board</b> comprised of notable scholarly
+            headed by <b>Justice Muhammad Taqi Usmani</b>, Who is also the
+            Chaorman of the Sharia board for the Accounting and Auditing
+            Organization for Islamic Financial Institutions(AAOIFI).
+          </p>
+        </div>
+      </div>
+      <div id="review4" class="review">
+        <div class="review-content">
+          <p class="description">
+            <span>Independent Sharia board</span>
+            <br />
+            <b>Independent Sharia board</b> comprised of notable scholarly
+            headed by <b>Justice Muhammad Taqi Usmani</b>, Who is also the
+            Chaorman of the Sharia board for the Accounting and Auditing
+            Organization for Islamic Financial Institutions(AAOIFI).
+          </p>
+        </div>
+      </div>
+      <div id="review5" class="review">
+        <div class="review-content">
+          <p class="description">
+            <span>Independent Sharia board</span>
+            <br />
+            <b>Independent Sharia board</b> comprised of notable scholarly
+            headed by <b>Justice Muhammad Taqi Usmani</b>, Who is also the
+            Chaorman of the Sharia board for the Accounting and Auditing
+            Organization for Islamic Financial Institutions(AAOIFI).
+          </p>
+        </div>
+      </div>
+      <button class="qualified">
+        <img src="./images/check-mark.png" alt="Check-mark" />
+        <span>Pre-qualify</span>
+        <span>online in less </span>
+        <span>than 10 minutes &nbsp; <i class="fa fa-caret-right"></i></span>
+      </button>
+    </div>
+
+    <!------------------------ customers-container -------------------->
+    <div class="container-fluid mt-5">
+      <div class="container py-4 text-center customers-container">
+        <h2 class="first">What our Customers say</h2>
+        <p>
+          This is Photoshop's version of Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Hic quod provident cumque sit eum! Voluptatibus.
+        </p>
+
+        <hr />
+        <div id="testimony1" class="testimony">
+          <div class="testimony-content">
+            <div class="feedback-content">
+              <span class="inverted-commas-left"
+                ><img src="./images/inverted-commas-left.png" alt="Commas"
+              /></span>
+              <span class="box">
+                I was nervous about going with an "unconventional" lender and
+                recieved words of caution from my realtor as well because of it.
+                However my convictions led me to give it a try and hope for the
+                best. Now that we are nearing and offering a competitive home
+                financing package. This combination of services makes me feel
+                confident that I made the right choice and your high level of
+                service has made what can be an over-whelming process and
+                commitment to be manaegable and pleasant.</span
+              >
+              <span class="inverted-commas-right"
+                ><img src="./images/inverted-commas-right.png" alt="Commas" />
+              </span>
+            </div>
+
+            <div class="hr-down"></div>
+          </div>
+        </div>
+        <div id="testimony2" class="testimony">
+          <div class="testimony-content">
+            <div class="feedback-content">
+              <span class="inverted-commas-left"
+                ><img src="./images/inverted-commas-left.png" alt="Commas"
+              /></span>
+              <span class="box">
+                I was nervous about going with an "unconventional" lender and
+                recieved words of caution from my realtor as well because of it.
+                However my convictions led me to give it a try and hope for the
+                best. Now that we are nearing and offering a competitive home
+                financing package. This combination of services makes me feel
+                confident that I made the right choice and your high level of
+                service has made what can be an over-whelming process and
+                commitment to be manaegable and pleasant.</span
+              >
+              <span class="inverted-commas-right"
+                ><img src="./images/inverted-commas-right.png" alt="Commas" />
+              </span>
+            </div>
+            <div class="hr-down"></div>
+          </div>
+        </div>
+        <div id="testimony3" class="testimony">
+          <div class="testimony-content">
+            <div class="feedback-content">
+              <span class="inverted-commas-left"
+                ><img src="./images/inverted-commas-left.png" alt="Commas"
+              /></span>
+              <span class="box">
+                I was nervous about going with an "unconventional" lender and
+                recieved words of caution from my realtor as well because of it.
+                However my convictions led me to give it a try and hope for the
+                best. Now that we are nearing and offering a competitive home
+                financing package. This combination of services makes me feel
+                confident that I made the right choice and your high level of
+                service has made what can be an over-whelming process and
+                commitment to be manaegable and pleasant.</span
+              >
+              <span class="inverted-commas-right"
+                ><img src="./images/inverted-commas-right.png" alt="Commas" />
+              </span>
+            </div>
+            <div class="hr-down"></div>
+          </div>
+        </div>
+        <div id="testimony4" class="testimony">
+          <div class="testimony-content">
+            <div class="feedback-content">
+              <span class="inverted-commas-left"
+                ><img src="./images/inverted-commas-left.png" alt="Commas"
+              /></span>
+              <span class="box">
+                I was nervous about going with an "unconventional" lender and
+                recieved words of caution from my realtor as well because of it.
+                However my convictions led me to give it a try and hope for the
+                best. Now that we are nearing and offering a competitive home
+                financing package. This combination of services makes me feel
+                confident that I made the right choice and your high level of
+                service has made what can be an over-whelming process and
+                commitment to be manaegable and pleasant.</span
+              >
+              <span class="inverted-commas-right"
+                ><img src="./images/inverted-commas-right.png" alt="Commas" />
+              </span>
+            </div>
+            <div class="hr-down"></div>
+          </div>
+        </div>
+
+        <div class="container feedback-container">
+          <div class="col-sm-3">
+            <img
+              src="./images/customer1.png"
+              alt="Customer"
+              onclick="switchVisible(1)"
+            />
+            <h6>Sincerely, <span>Bassem</span></h6>
+          </div>
+          <div class="col-sm-3">
+            <img
+              src="./images/customer2.png"
+              alt="Customer"
+              onclick="switchVisible(2)"
+            />
+            <h6>Sincerely, <span>Aisha</span></h6>
+          </div>
+          <div class="col-sm-3">
+            <img
+              src="./images/customer3.png"
+              alt="Customer"
+              onclick="switchVisible(3)"
+            />
+            <h6>Sincerely, <span>Samer</span></h6>
+          </div>
+          <div class="col-sm-3">
+            <img
+              src="./images/plus-sign-button.png"
+              alt="Customer"
+              onclick="switchVisible(4)"
+            />
+            <h6>View more</h6>
+          </div>
+        </div>
+        <button class="customer-button">Pre-qualify in 10 minutes</button>
+      </div>
+    </div>
+
+    <!------------------------ executives-container -------------------->
+    <div class="container-fluid mt-5 executives-container">
+      <div class="container executives-sub-container">
+        <div class="col py-4 text-center">
+          <h2 class="first">Our Account Executives are here to help you</h2>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-sm-6">
+            <div class="card">
+              <i class="fa fa-mobile-phone fa-3x phone-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">1-866-guidance (484-3262)</h5>
+                <p class="card-text">
+                  Give us a call and get answer to all your queries
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <i class="fa fa-user fa-2x user-icon"></i>
+              <div class="card-body">
+                <h5 class="card-title">Account Executive Finder</h5>
+                <p class="card-text">
+                  Find nearest Agent to get answer to all your queries
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ blog-container -------------------->
+    <div class="container-fluid p-0 mt-1 blog-container">
+      <div class="container text-center blog-sub-container">
+        <h2 class="first">Featured Blog & News</h2>
+        <h4>
+          This is Photoshop's version of Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Hic quod provident cumque sit eum! Voluptatibus.
+        </h4>
+        <hr />
+
+        <div class="container blog-slider">
+          <span class="prev"
+            ><img src="./images/previous.png" alt="previous"
+          /></span>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <img src="./images/blog-image1.png" alt="Blog" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      The top ten mistakes potential Home-Buyers make when
+                      purchasing a home
+                    </h5>
+                    <p class="card-text">
+                      For many working Muslim Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Tempora perspiciatis dolores
+                      mollitia beatae voluptate tenetur id porro iusto dolorem
+                      provident? Lorem ipsum dolor sit amet.
+                    </p>
+                    <a class="read" href="#">Read the post </a>
+                    <span class="blog-social">
+                      <i class="fa fa-caret-right caret"></i>
+                      <i class="blog-icons fa fa-facebook-f"></i>
+                      <i class="blog-icons fa fa-twitter"></i>
+
+                      <i class="blog-icons fa fa-envelope"></i>
+                      <span class="blog-icons vertical"></span>
+                      <i class="blog-icons fa fa-share-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <img src="./images/blog-image2.png" alt="Blog" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      The top ten mistakes potential Home-Buyers make when
+                      purchasing a home
+                    </h5>
+                    <p class="card-text">
+                      For many working Muslim Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. Tempora perspiciatis dolores
+                      mollitia beatae voluptate tenetur id porro iusto dolorem
+                      provident? Lorem ipsum dolor sit amet.
+                    </p>
+                    <a class="read" href="#">Read the post </a>
+                    <span class="blog-social">
+                      <i class="fa fa-caret-right caret"></i>
+                      <i class="blog-icons fa fa-facebook-f"></i>
+                      <i class="blog-icons fa fa-twitter"></i>
+
+                      <i class="blog-icons fa fa-envelope"></i>
+                      <span class="blog-icons vertical"></span>
+                      <i class="blog-icons fa fa-share-alt"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <!-- <span class="carousel-control-prev-icon"></span> -->
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <!-- <span class="carousel-control-next-icon"></span> -->
+            </a>
+          </div>
+          <span class="next"><img src="./images/next.png" alt="next" /></span>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------ contact-container -------------------->
+    <div class="container-fluid p-0 contact-container">
+      <div class="container py-3 contact-sub-container">
+        <span class="info"
+          >YOU WANT TO KNOW MORE <br />
+          INFORMATION? SEND US A MAIL!</span
+        >
+        <span><input type="text" placeholder="Your Name" /></span>
+        <span><input type="email" placeholder="Your Email" /></span>
+        <span><button class="send">SEND</button></span>
+      </div>
+      <span class="chat-bot"
+        ><button class="chat-button">
+          <span><i class="fa fa-comment comment"></i></span>
+
+          <span class="chat">Chat with us</span><span>+</span>
+        </button></span
+      >
+    </div>
+
+    <!------------------------ footer-1-container -------------------->
+    <div class="container-fluid p-0 my-4 footer-1-container">
+      <div class="container footer-1-sub-container">
+        <span class="same-color"
+          ><i class="fa fa-lock"></i>&nbsp; My Account</span
+        >
+        <span class="vertical"></span>
+        <span class="same-color">Career</span>
+        <span class="vertical"></span>
+        <span class="same-color">Contact Us</span>
+        <span class="vertical"></span>
+        <span class="same-color">Privacy and Declarations</span>
+        <span class="vertical"></span>
+        <span class="same-color">Licensing and Regulations</span>
+        <span class="vertical"></span>
+        <span><i class="social fa fa-facebook-f"></i></span>
+        <span><i class="social fa fa-twitter"></i></span>
+        <span
+          ><img class="blogger" src="./images/blogger.png" alt="Blogger"
+        /></span>
+        <span><i class="social fa fa-youtube-play"></i></span>
+      </div>
+    </div>
+
+    <!------------------------ footer-2-container -------------------->
+    <div class="container-fluid px-0 py-3 footer-2-container">
+      <div class="container footer-2-sub-container">
+        <span><i class="fa fa-bank"></i></span>
+        <span
+          ><img
+            class="consumer-access"
+            src="./images/consumer-access.gif"
+            alt="Consumer Access"
+        /></span>
+        <span class="same-color">NMLS# 2908</span>
+        <span class="vertical"></span>
+        <span class="same-color">&copy; Guidance Residential, LLC</span>
+        <span class="vertical"></span>
+        <span class="same-color">2015</span>
+        <span class="vertical"></span>
+        <span class="same-color">All Rights Reserved</span>
+      </div>
+    </div>
+    <script src="range-slider.js"></script>
+    <script src="review-popover.js"></script>
+    <script src="testimony-popover.js"></script>
+  </body>
+</html>
